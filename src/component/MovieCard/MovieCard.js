@@ -2,7 +2,7 @@ import React from 'react'
 import Rate from '../Rate'
 import './MovieCard.css'
 
-const MovieCard = ({movie : {name, image, date, description, rating,r }}) => {
+const MovieCard = ({movie : {name, image, date, description, rating }}) => {
 
     return (
         <div className='container'>
@@ -28,13 +28,9 @@ const MovieCard = ({movie : {name, image, date, description, rating,r }}) => {
             </div>
             <div className='mr-grid action-row'>
               <div className='col2'>
-              <button   className='watch-button'
-    onClick={(e) => {
-      e.preventDefault();
-      window.location.href={r};
-      }}
-> watch trailler</button>
-
+                <div className='watch-btn'>
+                  <h3>WATCH TRAILER</h3>
+                </div>
               </div>
             </div>
           </div>

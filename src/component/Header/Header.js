@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Rate from "../Rate";
 import "./Header.css";
 
@@ -7,26 +6,10 @@ const Header = ({ setMyInput, setMyRate, myRate }) => {
   return (
     <div style={{display:'flex',
     justifyContent:'space-around',
-    backgroundColor:'#f8ff8f',
+    backgroundColor:'blue',
     height:60}}>
-   <NavLink
-   style={{textDecoration:'none',paddingTop:25,}}
-   exact
-            to="/"
-            className="nav-link"
-            activeClassName="selected-link"
-          
-            >Home </NavLink>
-   <NavLink
- style={{textDecoration:'none',paddingTop:25,}}
-   exact
-            to="/About"
-            className="nav-link"
-            activeClassName="selected-link"
-          
-            >about </NavLink>
-
-
+      <h2>Home</h2>
+      <h2>About</h2>
       <div className="search-container">
         <input
           type="text"
