@@ -11,4 +11,4 @@ export const Main = ({movies, AddNewMovie}) => {
     )
 }
 
-export default Main
+export default Main;
